@@ -1,0 +1,40 @@
+.logo__texto{
+    width: 50%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo__texto img{
+    margin: auto;
+    margin-top: 0;
+}
+
+
+.logo__texto p{
+    color: #666;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 150px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    
+    .logo__texto{
+        width: 80%;
+        padding-top: 10px;
+    }
+    
+    .logo__texto img {
+      margin: auto;
+      padding-bottom: 15px;
+    }
+    
+    .logo__texto p {
+      font-size: 25px;
+    }
+  }

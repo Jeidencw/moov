@@ -1,0 +1,123 @@
+.slides {
+  padding: 50px;
+  margin-top: 2rem;
+  width: 50%;
+  margin-left: -100px;
+}
+
+.card-carousel {
+  --card-width:70%;
+  --card-max-width: 400px;
+  --card-height: 500px;
+  --carousel-min-width: 600px;
+  position: relative;
+  height: var(--card-height);
+  min-width: var(--carousel-min-width);
+  transition: filter 0.3s ease;
+  width: calc(60% - 10px);
+  margin-right: 150px;
+}
+
+.card-carousel.smooth-return {
+  transition: all 0.2s ease;
+}
+
+.card-carousel .card {
+  background: whitesmoke;
+  width: var(--card-width);
+  max-width: var(--card-max-width);
+  text-align: center;
+  padding: 1rem;
+  min-width: 250px;
+  height: var(--card-height);
+  position: absolute;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.5);
+  transition: inherit;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  filter: brightness(0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card.highlight {
+  filter: brightness(1);
+}
+
+.image-container {
+  width: 90%;
+  height: 50%;
+  position: relative;
+  background-size: cover;
+  margin-bottom: 2em;
+  border-radius: 20px;
+  padding: 1em;
+  box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.3);
+  margin-top: -4rem;
+}
+
+.image-container::after {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 120%;
+  border: solid 3px rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  position: absolute;
+  top: calc(-10% - 3px);
+  left: calc(-10% - 3px);
+}
+
+.card:nth-of-type(1) .image-container {
+  background-image: url("../imagens/funcional2.jpg");
+}
+
+.card:nth-of-type(2) .image-container {
+  background-image: url("../imagens/funcional2.jpg")
+}
+
+.card:nth-of-type(3) .image-container {
+  background-image: url("../imagens/funcional2.jpg")
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    
+  .home__container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
+  .slides{
+      margin-top: -150px;
+      margin-left: -300px;
+      padding-bottom: 500px;
+  }
+  
+  .card-carousel {
+      --card-width: 80%;
+      --carousel-min-width: 300px;
+      margin-right: 20px;
+      width: 100%;
+      position: absolute;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+
+}
