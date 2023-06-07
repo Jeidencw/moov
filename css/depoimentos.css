@@ -3,6 +3,19 @@
     background-color: white;
 }
 
+.depoimentos__title{
+    margin-bottom: 3rem;
+}
+
+.depoimentos__text{
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.depoimentos__subtitle{
+    font-size: 22px;
+}
+
 .card__image{
     position: relative;
     height: 100px;
