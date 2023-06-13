@@ -1,4 +1,4 @@
-const swiper = new Swiper('.slide__content', {
+const swiperDepoimentos = new Swiper('.slide__depoimentos', {
     loop: true,
     slidesPerView: 3,
     spaceBetween: 30,

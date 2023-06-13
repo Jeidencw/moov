@@ -19,6 +19,7 @@ const saibaMais = document.getElementsByClassName("saibaMais")
 const fechaModal = document.getElementsByClassName("fechaModal")
 const card = document.getElementsByClassName("card")
 
+
 for(let i = 0; i < saibaMais.length; i++){
     saibaMais[i].addEventListener("click", () => {
         modal[i].classList.add("active-modal")

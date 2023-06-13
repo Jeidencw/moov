@@ -5,10 +5,11 @@
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--moov-color-light);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .nav{
-    height: calc(var(--header-height) + 1.5rem);
+    height: 4.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,6 +26,18 @@
      width: 160px;
 }
 
+.nav__contact,
+.nav__contact-button{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav__contact-icon{
+    height: 2rem;
+    margin-right: 20px;
+}
+
 .nav__list{
     display: flex;
     column-gap: 2rem;
@@ -36,7 +49,7 @@
     align-items: center;
     font-size: var(--small-font-size);
     color: var(--title-color);
-    font-weight: var(--font-medium); 
+    font-weight: var(--font-semi-bold); 
     transition: .3s;
 }
 
@@ -61,8 +74,8 @@
 /* For medium devices */
 @media screen and (max-width: 768px) {
     .header{
-        top: initial;
-        bottom: 0;
+        top: 0;
+        height: 3rem;
     }
     .nav{
         height: var(--header-height);
@@ -70,19 +83,33 @@
 
     .nav__menu{
         position: fixed;
-        bottom: -100%;
+        top: -200px;
+        height: 200px;
         left: 0;
         width: 100%;
         background-color: #a8d4d4;
         padding: 2rem 1.5rem 4rem;
         box-shadow: 0 -1px 4px var(--moov-color-light);
-        border-radius: 1.5rem 1.5rem 0 0;
+        border-radius:  0 0 1.5rem 1.5rem;
         transition: .3s;
+    }
+
+    .nav__contact{
+        margin-left: auto;
+    }
+
+    .nav__contact-icon{
+        height: 1.5rem;
+        margin-right: 15px;
+    }
+
+    .nav__logo img{
+        width: 140px;
     }
 
     /* show menu */
     .show-menu{
-        bottom: 0;
+        top: 0;
     }
 
     .nav__list{
@@ -98,7 +125,7 @@
     .nav__close{
         position: absolute;
         right: 1.3rem;
-        bottom: .5rem;
+        top: .5rem;
         font-size: 1.5rem;
         cursor: pointer;
         color: var(--title-color);
@@ -109,7 +136,7 @@
     }
 
     .nav__toggle{
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         cursor: pointer; 
     }
 

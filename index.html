@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="./css/logoTexto.css">
     <link rel="stylesheet" href="./css/services.css">
     <link rel="stylesheet" href="./css/localizacao.css">
+    <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/contato.css">
     <link rel="stylesheet" href="./css/depoimentos.css">
+    <link rel="stylesheet" href="./css/scrollup.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 
@@ -60,39 +62,88 @@
 
             <i id="closeMenu" class="uil uil-times nav__close"></i>
         </div>
+            
+          <div class="nav__contact">
+            <a href="https://ig.me/m/moov.studio.fisio" class="nav__contact-button"><img class="nav__contact-icon" src="./imagens/instagram.svg" alt="icone instagram"></a>
+            <a href="https://api.whatsapp.com/send?phone=5541984220733&text=ola" class="nav__contact-button"><img class="nav__contact-icon" src="./imagens/whatsapp.svg" alt="icone instagram"></a>
+          </div>
 
-            <div class="nav__toggle">
-                <i id="openMenu" class="uil uil-apps"></i>
-            </div>
+          <div class="nav__toggle">
+              <i id="openMenu" class="uil uil-apps"></i>
+          </div>
       </nav>
   </header>
   <!--     fim menu      -->
 
-  
   <!--     home     -->
-  <section class="home__container container" id="home">
+  <section class="home__container container grid" id="home">
   
     <!--     slides      -->
-    <div class="slides">
-      <div class="card-carousel">
-        <div class="card" id="1">
-          <div class="image-container"></div>
-          <h3>LPF</h3>
-          <p>Transforme sua silhueta e conquiste a barriga dos seus sonhos com o serviço LPF: A chave para a barriga negativa!</p>
+    <div class="slide__container swiper">
+      <div class="slide__content">
+        <div class="card__wrapper swiper-wrapper">
+
+          <div class="card swiper-slide card">
+            <div class="image__content">
+              <div class="card__image">
+                <img src="./imagens/teste.jpg" alt=""  class="card__img">
+              </div>
+            </div>
+
+            <div class="card__content">
+              <h2 class="slide__title">LPF</h2>
+              <p class="slide__description">Transforme sua silhueta e conquiste a barriga dos seus sonhos com o serviço LPF: A chave para a barriga negativa!</p>
+            </div>
+          </div>
+
+
+          <div class="card swiper-slide card">
+            <div class="image__content">
+              <div class="card__image">
+                <img src="./imagens/teste.jpg" alt=""  class="card__img">
+              </div>
+            </div>
+
+            <div class="card__content">
+              <h2 class="slide__title">Pilates</h2>
+              <p class="slide__description">Fortaleça seu corpo, acalme sua mente: Descubra o poder do Pilates!</p>
+            </div>
+          </div>
+
+          <div class="card swiper-slide card">
+            <div class="image__content">
+              <div class="card__image">
+                <img src="./imagens/teste.jpg" alt=""  class="card__img">
+              </div>
+            </div>
+
+            <div class="card__content">
+              <h2 class="slide__title">Treinamento funcional</h2>
+              <p class="slide__description">Potencialize seu corpo, liberte sua força: Treinamento Funcional de excelência!</p>
+            </div>
+          </div>
+
+          <div class="card swiper-slide card">
+            <div class="image__content">
+              <div class="card__image">
+                <img src="./imagens/teste.jpg" alt=""  class="card__img">
+              </div>
+            </div>
+
+            <div class="card__content">
+              <h2 class="slide__title">Fisioterapia</h2>
+              <p class="slide__description">A fisioterapia promove a saúde e trata disfunções físicas, visando melhorar a funcionalidade e qualidade de vida.</p>
+            </div>
+          </div>
+
         </div>
-        <div class="card" id="2">
-          <div class="image-container"></div>
-          <h3>Pilates</h3>
-          <p >Fortaleça seu corpo, acalme sua mente: Descubra o poder do Pilates!</p>
-        </div>
-        <div class="card" id="3">
-          <div class="image-container"></div>
-          <h3>Treinamento funcional</h3>
-          <p>Potencialize seu corpo, liberte sua força: Treinamento Funcional de excelência!</p>
-        </div>  
       </div>
+
+      <div class="swiper-button-next swiperBtn"></div>
+      <div class="swiper-button-prev swiperBtn"></div>
     </div>
     <!--     fim slides      -->
+
     <div class="logo__texto">
       <img src="./imagens/logo.png" alt="logo studio moov">
       <p class="texto">Transforme seu corpo, fortaleça sua mente: Descubra o equilíbrio aqui na Moov</p>
@@ -252,6 +303,54 @@
     </div>
       </div>
 
+      <div class="services__content">
+        <div>
+          <img src="./imagens/pilates.svg" alt="icones pesos">
+        <h3 class="services__title">Fisioterapia</h3>
+        </div>
+  
+      <span class="services__button saibaMais">
+        Saiba mais
+        <i class="uil uil-arrow-right services__button-icon"></i>
+      </span>
+  
+      <div class="services__modal modal">
+        <div class="services__modal-content">
+          <i class="uil uil-times services__modal-close fechaModal"></i>
+  
+          <h3 class="services__modal-title">Fisioterapia</h3>
+          <p class="services__modal-description">A fisioterapia é uma área da saúde que trata de problemas de movimento e função do corpo. Fisioterapeutas ajudam as pessoas a se recuperar de lesões, aliviar a dor e melhorar a mobilidade. Eles usam exercícios e técnicas terapêuticas para ajudar os pacientes a se sentirem melhor e terem uma vida mais saudável. O objetivo é melhorar a qualidade de vida e a independência das pessoas.</p>
+          
+          <ul class="services__modal-services grid">
+            <li class="services__modal-service">
+              <i class="uil uil-check-circle services__modal-icon"></i>
+              <p class="services__modal-info">Recuperação de lesões</p>
+            </li>
+  
+            <li class="services__modal-service">
+              <i class="uil uil-check-circle services__modal-icon"></i>
+              <p class="services__modal-info">Alívio da dor</p>
+            </li>
+  
+            <li class="services__modal-service">
+              <i class="uil uil-check-circle services__modal-icon"></i>
+              <p class="services__modal-info">Melhora da mobilidade e função</p>
+            </li>
+  
+            <li class="services__modal-service">
+              <i class="uil uil-check-circle services__modal-icon"></i>
+              <p class="services__modal-info">Prevenção de lesões</p>
+            </li>
+  
+            <li class="services__modal-service">
+              <i class="uil uil-check-circle services__modal-icon"></i>
+              <p class="services__modal-info">Melhora da saúde respiratória</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+        </div>
+
     </div>
   </section>
   <!--     fim serviços     -->
@@ -263,96 +362,96 @@
     
     <span class="section__subtitle depoimentos__subtitle">Depoimentos</span>
     
-    <div class="slide__container swiper">
-        <div class="slide__content">
-          <div class="card__wrapper swiper-wrapper">
-            <div class="card swiper-slide">
-              <div class="image__content">
+    <div class="slide__container-depoimentos swiper">
+        <div class="slide__depoimentos">
+          <div class="card__wrapper-depoimentos swiper-wrapper">
+            <div class="card-depoimentos swiper-slide">
+              <div class="image__content-depoimentos">
                 <span class="overlay"></span>
 
-                <div class="card__image">
-                  <img src="./imagens/testemunha1.jpg" alt="" class="card__img">
+                <div class="card__image-depoimentos">
+                  <img src="./imagens/testemunha1.jpg" alt="" class="card__img-depoimentos">
                 </div>
               </div>
 
-              <div class="card__content">
-                <h2 class="nome">Davi</h2>
-                <p class="description"> Um trabalho realmente bom, todos os aspectos do projeto foram seguidos passo a passo e com bons resultados.</p>        
+              <div class="card__content-depoimentos">
+                <h2 class="nome-depoimentos">Davi</h2>
+                <p class="description-depoimentos"> Um trabalho realmente bom, todos os aspectos do projeto foram seguidos passo a passo e com bons resultados.</p>        
               </div>
             </div>
 
-            <div class="card swiper-slide">
-              <div class="image__content">
+            <div class="card-depoimentos swiper-slide">
+              <div class="image__content-depoimentos">
                 <span class="overlay"></span>
 
-                <div class="card__image">
-                  <img src="./imagens/testemunha2.jpg" alt="" class="card__img">
+                <div class="card__image-depoimentos">
+                  <img src="./imagens/testemunha2.jpg" alt="" class="card__img-depoimentos">
                 </div>
               </div>
 
-              <div class="card__content">
-                <h2 class="nome">Davi</h2>
-                <p class="description"> Um trabalho realmente bom, todos os aspectos do projeto foram seguidos passo a passo e com bons resultados.</p>        
+              <div class="card__content-depoimentos">
+                <h2 class="nome-depoimentos">Davi</h2>
+                <p class="description-depoimentos"> Um trabalho realmente bom, todos os aspectos do projeto foram seguidos passo a passo e com bons resultados.</p>        
               </div>
             </div>
 
-            <div class="card swiper-slide">
-              <div class="image__content">
+            <div class="card-depoimentos swiper-slide">
+              <div class="image__content-depoimentos">
                 <span class="overlay"></span>
 
-                <div class="card__image">
-                  <img src="./imagens/testemunha3.jpg" alt="" class="card__img">
+                <div class="card__image-depoimentos">
+                  <img src="./imagens/testemunha3.jpg" alt="" class="card__img-depoimentos">
                 </div>
               </div>
 
-              <div class="card__content">
-                <h2 class="nome">Davi</h2>
-                <p class="description"> Um trabalho realmente bom, todos os aspectos do projeto foram seguidos passo a passo e com bons resultados.</p>        
+              <div class="card__content-depoimentos">
+                <h2 class="nome-depoimentos">Davi</h2>
+                <p class="description-depoimentos"> Um trabalho realmente bom, todos os aspectos do projeto foram seguidos passo a passo e com bons resultados.</p>        
               </div>
             </div>
 
-            <div class="card swiper-slide">
-              <div class="image__content">
+            <div class="card-depoimentos swiper-slide">
+              <div class="image__content-depoimentos">
                 <span class="overlay"></span>
 
-                <div class="card__image">
-                  <img src="./imagens/testemunha4.jpg" alt="" class="card__img">
+                <div class="card__image-depoimentos">
+                  <img src="./imagens/testemunha4.jpg" alt="" class="card__img-depoimentos">
                 </div>
               </div>
 
-              <div class="card__content">
-                <h2 class="nome">Davi</h2>
-                <p class="description"> Um trabalho realmente bom, todos os aspectos do projeto foram seguidos passo a passo e com bons resultados.</p>        
+              <div class="card__content-depoimentos">
+                <h2 class="nome-depoimentos">Davi</h2>
+                <p class="description-depoimentos"> Um trabalho realmente bom, todos os aspectos do projeto foram seguidos passo a passo e com bons resultados.</p>        
               </div>
             </div>
 
-            <div class="card swiper-slide">
-              <div class="image__content">
+            <div class="card-depoimentos swiper-slide">
+              <div class="image__content-depoimentos">
                 <span class="overlay"></span>
 
-                <div class="card__image">
-                  <img src="./imagens/testemunha5.jpg" alt="" class="card__img">
+                <div class="card__image-depoimentos">
+                  <img src="./imagens/testemunha5.jpg" alt="" class="card__img-depoimentos">
                 </div>
               </div>
 
-              <div class="card__content">
-                <h2 class="nome">Davi</h2>
-                <p class="description"> Um trabalho realmente bom, todos os aspectos do projeto foram seguidos passo a passo e com bons resultados.</p>        
+              <div class="card__content-depoimentos">
+                <h2 class="nome-depoimentos">Davi</h2>
+                <p class="description-depoimentos"> Um trabalho realmente bom, todos os aspectos do projeto foram seguidos passo a passo e com bons resultados.</p>        
               </div>
             </div>
 
-            <div class="card swiper-slide">
-              <div class="image__content">
+            <div class="card-depoimentos swiper-slide">
+              <div class="image__content-depoimentos">
                 <span class="overlay"></span>
 
-                <div class="card__image">
-                  <img src="./imagens/testemunha6.jpg" alt="" class="card__img">
+                <div class="card__image-depoimentos">
+                  <img src="./imagens/testemunha6.jpg" alt="" class="card__img-depoimentos">
                 </div>
               </div>
 
-              <div class="card__content">
-                <h2 class="nome">Davi</h2>
-                <p class="description"> Um trabalho realmente bom, todos os aspectos do projeto foram seguidos passo a passo e com bons resultados.</p>        
+              <div class="card__content-depoimentos">
+                <h2 class="nome-depoimentos">Davi</h2>
+                <p class="description-depoimentos"> Um trabalho realmente bom, todos os aspectos do projeto foram seguidos passo a passo e com bons resultados.</p>        
               </div>
             </div>
           </div>
@@ -419,13 +518,16 @@
     </section>
   <!--     fim contato     -->
 
+  
+  <a href="#home" class="scrollup" id="scrollup">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>  
+
 
   <script src="./js/slides.js" defer></script>
   <script src="./js/index.js" defer></script>
   <script src="./js/depoimentos.js" defer></script>
+  <script src="./js/scrollup.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 </html>
-
-
-
