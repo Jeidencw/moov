@@ -2,8 +2,13 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+.logo__texto{
+    margin: 20px auto;
+}
+
 @media screen and (max-width: 768px) {
-    .home__container{
-        grid-template-columns: repeat(1, 1fr);
+    .home__container {
+      grid-template-columns: repeat(1, 1fr);
     }
 }
+  
