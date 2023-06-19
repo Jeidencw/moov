@@ -1,11 +1,10 @@
 
 .servicos__title{
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-bottom: 7rem;
+    margin-bottom: 6rem !important;
 }
 
 .services__container{
-    grid-template-columns: repeat(3, 270px);
+    grid-template-columns: repeat(4, 270px);
     justify-content: center;
     column-gap: 1.8rem;
 }

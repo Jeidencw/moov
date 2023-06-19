@@ -7,14 +7,12 @@
     <title>Studio Moov</title>
     
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="stylesheet" href="./css/slides.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/logoTexto.css">
     <link rel="stylesheet" href="./css/services.css">
     <link rel="stylesheet" href="./css/localizacao.css">
     <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./css/contato.css">
     <link rel="stylesheet" href="./css/depoimentos.css">
     <link rel="stylesheet" href="./css/scrollup.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
@@ -52,12 +50,6 @@
                       <i class="uil uil-map-marker nav__icon"></i> Localização
                     </a>                    
                 </li>
-
-                <li class="nav__item">
-                    <a href="#contato" class='nav__link'>
-                      <i class="uil uil-phone nav__icon"></i> Contato
-                    </a>                    
-                </li>
             </ul>
 
             <i id="closeMenu" class="uil uil-times nav__close"></i>
@@ -77,6 +69,11 @@
 
   <!--     home     -->
   <section class="home__container container grid" id="home">
+
+    <div class="logo__texto">
+      <img src="./imagens/logo.png" alt="logo studio moov">
+      <p class="texto">Transforme seu corpo, fortaleça sua mente: Descubra o equilíbrio aqui na Moov</p>
+    </div>
   
     <!--     slides      -->
     <div class="slide__container swiper">
@@ -95,7 +92,6 @@
               <p class="slide__description">Transforme sua silhueta e conquiste a barriga dos seus sonhos com o serviço LPF: A chave para a barriga negativa!</p>
             </div>
           </div>
-
 
           <div class="card swiper-slide card">
             <div class="image__content">
@@ -143,11 +139,6 @@
       <div class="swiper-button-prev swiperBtn"></div>
     </div>
     <!--     fim slides      -->
-
-    <div class="logo__texto">
-      <img src="./imagens/logo.png" alt="logo studio moov">
-      <p class="texto">Transforme seu corpo, fortaleça sua mente: Descubra o equilíbrio aqui na Moov</p>
-    </div>
 
   </section>
   <!--     fim home      -->
@@ -466,57 +457,19 @@
 
   <!--     localização     -->
   <section class="localizacao section" id="localizacao">
-    <h2 class="section__title">Localização</h2>
+    <h2 class="section__title localizacao__title">Localização</h2>
 
     <div class="localizacao__container container">
         <iframe title="localização no mapa do studio moov" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d637.3236059579646!2d-49.096033368334346!3d-25.36304550214557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcedf3d3ec70f9%3A0x5d61941946f53adc!2sStudio%20MOOV!5e0!3m2!1spt-BR!2sbr!4v1685582804609!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
-        <p>R.Prof Duilio Calderari, 1370. 2°andar/Sala- 21 - Jardim Paulista</p>
-        <p>Campina Grande do Sul - PR, 83430-000</p>
+        <div class="localizacao__text">
+          <p>R.Prof Duilio Calderari, 1370. 2°andar/Sala- 21 - Jardim Paulista</p>
+          <p>Campina Grande do Sul - PR, 83430-000</p>
+        </div>
     </div>
   </section>
   <!--     fim localização     -->
 
-  <!--     contato     -->
-    <section class="contact section" id="contato">
-      <h2 class="section__title contact__title">Contato</h2>
-
-      <div class="contact__container container grid">
-        <div class="contact__content">
-          <div class="contact__info">
-            
-            <div class="contact__card">
-              <img class="contact__card-icon" src="./imagens/instagram.svg" alt="icone instagram">
-              
-              <h3 class="contact__card-title">Instagram</h3>
-              <span class="contact__card-data">user.exemplo</span>
-
-              <a href="https://ig.me/m/moov.studio.fisio" class="contact__button">Write me <img class="contact__button-icon" src="./imagens/arrow-right.svg" alt="icone flecha"></a>
-            </div>
-
-            <div class="contact__card">
-              <img class="contact__card-icon" src="./imagens/whatsapp.svg" alt="icone whatsapp">
-              
-              <h3 class="contact__card-title">Whatsapp</h3>
-              <span class="contact__card-data">41 98422-0733</span>
-
-              <a href="https://api.whatsapp.com/send?phone=5541984220733&text=ola" class="contact__button">Write me <img class="contact__button-icon" src="./imagens/arrow-right.svg" alt="icone flecha"></a>
-            </div>
-
-            <div class="contact__card">
-              <img class="contact__card-icon" src="./imagens/mail.svg" alt="icone email">
-              
-              <h3 class="contact__card-title">Email</h3>
-              <span class="contact__card-data">exemplo@email.com</span>
-
-              <a href="henriquecw@gmail.com" class="contact__button">Write me <img class="contact__button-icon" src="./imagens/arrow-right.svg" alt="icone flecha"></a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-  <!--     fim contato     -->
 
   
   <a href="#home" class="scrollup" id="scrollup">

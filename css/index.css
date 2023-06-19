@@ -72,7 +72,7 @@ textarea {
 
 body {
   color: var(--text-color);
-  background: linear-gradient(to bottom right, #ffffff, #a8d4d4);
+  background: linear-gradient(to bottom right, white, var(--moov-color));
   background-attachment: fixed;
 }
 
@@ -105,7 +105,7 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  padding: 6rem 0 2rem;
+  padding: 4rem 0 2rem;
 }
 
 .section__title {
