@@ -32,21 +32,19 @@ const servicesContent = document.getElementsByClassName("services__content")
 
 
 for(let i = 0; i < saibaMais.length; i++){
-    saibaMais[i].addEventListener("click", () => {
-        modal[i].classList.add("active-modal")
-    })
+
+    const addModal = () => modal[i].classList.add("active-modal")
+    const removeModal = () => modal[i].classList.remove("active-modal")
+    
+    saibaMais[i].addEventListener('click', () => addModal())
+    card[i].addEventListener("click", () => addModal())
+
+    fechaModal[i].addEventListener("click", () => removeModal())
 
     modal[i].addEventListener('click', event => {
         if(event.target === modal[i]){
-            modal[i].classList.remove('active-modal')
+            event.st
+            removeModal()
         }
-    })
-
-    fechaModal[i].addEventListener("click", () => {
-        modal[i].classList.remove("active-modal")
-    })
-    
-    card[i].addEventListener("click", () => {
-        modal[i].classList.add("active-modal")
     })
 }
